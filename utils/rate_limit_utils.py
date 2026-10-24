@@ -10,7 +10,7 @@ _GLOBAL_REQUEST_TIMES: Deque[float] = deque()
 
 # 滑动窗口限速器 核心: 窗口时间内,超出了数量,等待(sleep)
 def apply_api_rate_limit(
-        max_requests: int = 3000,
+        max_requests: int = 30000,
         window_seconds: int = 60
 ) -> None:
     """
